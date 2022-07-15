@@ -1,12 +1,12 @@
 import Header from "./Header/Header";
 import Cmc from "./Hero/Cmc";
-import Hero from "./Hero/Hero";
+import CardPictures from "./Hero/CardPictures";
 
 function Homepage() {
   return (
-    <div>
+    <div className="w-100 vh-100 home">
       <Header />
-      <Hero />
+      <CardPictures />
       <Cmc />
     </div>
   );

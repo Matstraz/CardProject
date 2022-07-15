@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Hero() {
+function CardPictures() {
   const [cardName, setCardName] = useState();
   const [cardPic, setCardPic] = useState();
 
@@ -19,8 +19,8 @@ function Hero() {
   return (
     <div>
       <form className="d-flex justify-content-center mt-2" onSubmit={handleSearch}>
-        <input type="text" onChange={handleCardName}></input>
-        <button type="submit">Search</button>
+        <input type="text" className=" border border-dark" onChange={handleCardName}></input>
+        <button type="submit" className="ms-1 border border-dark">Search</button>
       </form>
       <div className="d-flex justify-content-center mt-3" >
       <img src={cardPic} alt=""></img>
@@ -30,4 +30,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default CardPictures;
